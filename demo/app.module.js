@@ -8,12 +8,15 @@
 ])
 
 .controller('geofenceController', function($scope, $q, $http) {
-       $scope.getPartners = function(name){
+        $scope.data = {};
+        $scope.zones = {};
+
+        $scope.getPartners = function(name){
             var differed = $q.defer();
             if(name){
                 var searchObj = {};
                 searchObj.name = name;
-                // we have to filter partner
+                // we have to filter partners using searchObj
                 $http.get('data/partners.json')
                 .then(function(resp) {
                     $scope.partners = resp.data;
@@ -33,14 +36,16 @@
                 var searchObj = {};
                 searchObj.role = "serviceagent";
                 searchObj.partner_id = id;
-                userinfoFactory.get('',searchObj).then(function(data){
-                    $scope.phlebos = angular.copy(data.response);
+                // we have to filter phlebos using searchObj
+                $http.get('data/phlebos.json')
+                .then(function(resp) {
+                    $scope.phlebos = angular.copy(resp.data);
                     $scope.phlebos.forEach(function(obj){
                         obj.isCheck = false;
                     });
                     $scope.partners = [];
                     differed.resolve($scope.phlebos);
-                })
+                });
             }
             else{
                 differed.reject();
@@ -54,23 +59,12 @@
         }
 
         // zone save
-        function save() {
-            geofenceFactory.add($scope.data.zones).then(function(data) {
-                $scope.successFlag = true;
-                $scope.data.zones = {};
-                $scope.zones = {};
-                $state.go('main.geofence');
-            });
+        function save(zoneObj) {
+            alert("geofence saved")
         }
         // zone Update
-        function update() {
-
-            geofenceFactory.update($scope.data.zones).then(function(data) {
-                console.log(data);
-                $scope.successFlag = true;
-                $scope.zones = {};
-                $state.go('main.geofence');
-            });
+        function update(zoneObj) {
+            alert("geofence saved")
         }
 });
 

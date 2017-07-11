@@ -1,0 +1,26 @@
+[
+    {
+      "_id": "1",
+      "username": "Karan",
+      "profile": {
+        "name": "Karan",
+        "mobilenumber": "9999999999"
+      }
+    },
+    {
+      "_id": "2",
+      "username": "Monish",
+      "profile": {
+        "name": "Monish",
+        "mobilenumber": "9999999999"
+      }
+    },
+    {
+      "_id": "3",
+      "username": "Burhan",
+      "profile": {
+        "name": "Burhan",
+        "mobilenumber": "2342342423"
+      }
+    }
+]
