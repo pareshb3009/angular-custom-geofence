@@ -1,6 +1,6 @@
 # angular-custom-geofence
 To see the demo
--Clone this repository
+-Clone this repository /n
 -Change directory to demo folder
 -Install npm dependencies - npm install
 -Install bower dependencies - bower install
