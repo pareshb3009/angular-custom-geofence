@@ -11,7 +11,7 @@ npm install
 <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script><br>
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script><br>
 <script src="bower_components/angular-custom-geofence/geofence.min.js"></script><br>
-<script src='bower_components/lodash/lodash.js'></script><br>
+<script src="bower_components/lodash/lodash.js"></script><br>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=drawing,places,visualization"></script><br><br>
 <b>To see the demo</b> <br>
 -Clone this repository <br>
