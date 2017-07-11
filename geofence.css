@@ -99,3 +99,15 @@
   overflow-x: hidden;
   background-color: white;
 }
+
+.searchtable {
+    position: absolute;
+    z-index: 9;
+    background-color: wheat;
+    width: inherit;
+    display: block;
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 30px;
+    /*width:50%;*/
+}

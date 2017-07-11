@@ -1,0 +1,15 @@
+[
+    {
+      "_id": "1",
+      "info": {
+        "name": "Diagnostic 1"
+      }
+    },
+    {
+      "_id": "2",
+      "info": {
+        "name": "Diagnostic 2"
+      }
+    }
+]
+
