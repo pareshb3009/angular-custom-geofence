@@ -1,8 +1,8 @@
 # angular-custom-geofence
 <b>Steps to add in your project</b> <br>
 -Add following css files.<br>
-/<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"> <br>
-/<link href="bower_components/angular-custom-geofence/geofence.css" rel="stylesheet" />'<br>
+<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"><br>
+<link href="bower_components/angular-custom-geofence/geofence.css" rel="stylesheet"/><br>
 -Add following js files.<br>
 <script src="bower_components/jquery/dist/jquery.min.js"></script><br>
 <script src="bower_components/angular/angular.js"></script><br>
